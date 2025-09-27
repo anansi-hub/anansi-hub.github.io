@@ -1,0 +1,381 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>DMC 360 — Visa & Document Tracker</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div class="layout">
+      <aside class="sidebar">
+        <div class="toolbar">
+          <a href="/" class="toolbar__app" aria-label="App">D</a>
+
+          <hr class="toolbar__divider" />
+
+          <nav class="toolbar__nav" aria-label="Primary">
+            <a class="toolbar__btn" aria-label="Home" title="Home" href="./dashboard-home.html">
+              <svg class="toolbar__icon" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M4 10.5 12 4l8 6.5V20a2 2 0 0 1-2 2h-4v-6H10v6H6a2 2 0 0 1-2-2z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+            <a class="toolbar__btn" aria-label="Conversations" title="Conversations" href="./dashboard-inbox.html">
+              <svg class="toolbar__icon" viewBox="0 0 24 24" aria-hidden="true">
+                <rect x="3" y="4" width="18" height="12" rx="2" ry="2" fill="none" stroke="currentColor" stroke-width="1.8"/>
+                <path d="M3 8l9 5 9-5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+            <a class="toolbar__btn" aria-label="Modules" title="Modules" href="./dashboard-modules.html">
+              <svg class="toolbar__icon" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M4 4h7v7H4zM13 4h7v7h-7zM4 13h7v7H4zM13 13h7v7h-7z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/>
+              </svg>
+            </a>
+            <a class="toolbar__btn" aria-label="CRM" title="CRM" href="./dashboard-crm.html">
+              <svg class="toolbar__icon" viewBox="0 0 24 24" aria-hidden="true">
+                <circle cx="12" cy="7.5" r="3" fill="none" stroke="currentColor" stroke-width="1.8"/>
+                <path d="M4 20a8 5 0 0 1 16 0" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+            <a class="toolbar__btn" aria-label="Vendors" title="Vendors" href="./dashboard-vendors.html">
+              <svg class="toolbar__icon" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M3 10h18l-2-5H5l-2 5Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
+                <path d="M5 10v8h14v-8" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
+              </svg>
+            </a>
+            <a class="toolbar__btn toolbar__btn--active" aria-label="Visa & Docs" title="Visa & Docs" aria-current="page" href="./dashboard-visa-docs.html">
+              <svg class="toolbar__icon" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M7 3h8l4 4v14H7V3Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
+                <path d="M15 3v4h4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
+                <path d="M9 14l2 2 4-4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+          </nav>
+
+          <div class="toolbar__spacer" aria-hidden="true"></div>
+
+          <a class="toolbar__btn" aria-label="Settings" title="Settings" href="./dashboard-settings.html">
+            <svg class="toolbar__icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M9.594 3.94c.09-.542.56-.94 1.11-.94h2.593c.55 0 1.02.398 1.11.94l.213 1.281c.063.374.313.686.645.87.074.04.147.083.22.127.325.196.72.257 1.075.124l1.217-.456a1.125 1.125 0 0 1 1.37.49l1.296 2.247a1.125 1.125 0 0 1-.26 1.431l-1.003.827c-.293.241-.438.613-.43.992a7.723 7.723 0 0 1 0 .255c-.008.378.137.75.43.991l1.004.827c.424.35.534.955.26 1.43l-1.298 2.247a1.125 1.125 0 0 1-1.369.491l-1.217-.456c-.355-.133-.75-.072-1.076.124a6.47 6.47 0 0 1-.22.128c-.331.183-.581.495-.644.869l-.213 1.281c-.09.543-.56.94-1.11.94h-2.594c-.55 0-1.019-.398-1.11-.94l-.213-1.281c-.062-.374-.312-.686-.644-.87a6.52 6.52 0 0 1-.22-.127c-.325-.196-.72-.257-1.076-.124l-1.217.456a1.125 1.125 0 0 1-1.369-.49l-1.297-2.247a1.125 1.125 0 0 1 .26-1.431l1.004-.827c.292-.24.437-.613.43-.991a6.932 6.932 0 0 1 0-.255c.007-.38-.138-.751-.43-.992l-1.004-.827a1.125 1.125 0 0 1-.26-1.43l1.297-2.247a1.125 1.125 0 0 1 1.37-.491l1.216.456c.356.133.751.072 1.076-.124.072-.044.146-.086.22-.128.332-.183.582-.495.644-.869l.214-1.28Z" />
+              <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+            </svg>
+          </a>
+        </div>
+      </aside>
+
+      <section class="main">
+        <header class="app-header">
+          <h1 class="page-title">Visa & Document Tracker</h1>
+          <div class="header-right">
+            <details class="user-menu">
+              <summary class="user-menu__summary" aria-label="Open user menu">
+                <div class="user-menu__avatar" aria-hidden="true">JD</div>
+                <div class="user-menu__meta">
+                  <div class="user-menu__name">John Doe</div>
+                  <div class="user-menu__role">Sales Agent</div>
+                </div>
+                <svg class="user-menu__chevron" viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </summary>
+              <ul class="user-menu__list" role="menu">
+                <li class="user-menu__item"><a class="user-menu__link" href="#" role="menuitem">Profile</a></li>
+                <li class="user-menu__item"><a class="user-menu__link" href="#" role="menuitem">Preferences</a></li>
+                <li class="user-menu__item"><hr /></li>
+                <li class="user-menu__item"><a class="user-menu__link" href="./login.html" role="menuitem">Sign out</a></li>
+              </ul>
+            </details>
+          </div>
+        </header>
+
+        <div class="content">
+          <div class="tracker-page">
+            <div class="tracker-left">
+              <!-- Filters/search -->
+              <article class="panel">
+                <div class="panel-body">
+                  <div class="modules-toolbar">
+                    <div class="input-wrap">
+                      <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+                        <circle cx="11" cy="11" r="7" fill="none" stroke="currentColor" stroke-width="1.6"/>
+                        <path d="M20 20l-3.5-3.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+                      </svg>
+                      <input class="text-input" type="search" placeholder="Search people, passport, case ID, tag…" />
+                    </div>
+                    <div class="thread-filters">
+                      <button class="pill" aria-pressed="true">All</button>
+                      <button class="pill">In progress</button>
+                      <button class="pill">Submitted</button>
+                      <button class="pill">Approved</button>
+                      <button class="pill">Rejected</button>
+                      <button class="pill">Expired</button>
+                      <button class="pill">Expiring soon</button>
+                    </div>
+                    <div class="mini-grid">
+                      <select class="text-input" aria-label="Country">
+                        <option selected>Any country</option>
+                        <option>USA</option>
+                        <option>UK</option>
+                        <option>Schengen</option>
+                        <option>Japan</option>
+                        <option>Australia</option>
+                      </select>
+                      <select class="text-input" aria-label="Visa type">
+                        <option selected>Any type</option>
+                        <option>Tourist</option>
+                        <option>Business</option>
+                        <option>Student</option>
+                        <option>Work</option>
+                      </select>
+                      <select class="text-input" aria-label="Owner">
+                        <option selected>Any owner</option>
+                        <option>Me</option>
+                        <option>Team A</option>
+                        <option>Team B</option>
+                      </select>
+                      <select class="text-input" aria-label="Checklist">
+                        <option selected>Any checklist</option>
+                        <option>Missing docs</option>
+                        <option>Has expiry in 30d</option>
+                        <option>Has appointment</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              </article>
+
+              <!-- Cases table -->
+              <article class="panel">
+                <header class="panel-header">
+                  <h3 class="panel-title">Cases</h3>
+                  <div class="panel-actions">
+                    <button class="pill" type="button">Bulk actions</button>
+                  </div>
+                </header>
+                <div class="panel-body">
+                  <div class="table-wrap">
+                    <table class="table" aria-label="Visa and document cases">
+                      <thead>
+                        <tr>
+                          <th style="width:32px;"></th>
+                          <th>Person</th>
+                          <th>Case ID</th>
+                          <th>Visa type</th>
+                          <th>Country</th>
+                          <th>Status</th>
+                          <th>Expiry</th>
+                          <th>Missing docs</th>
+                          <th style="text-align:right;">Actions</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td><input type="checkbox" aria-label="Select row" /></td>
+                          <td>
+                            <div class="row-cell">
+                              <div class="avatar small">AK</div>
+                              <div>
+                                <div class="row-title">Anita Kumar</div>
+                                <div class="row-subtitle">Passport: N1234567</div>
+                              </div>
+                            </div>
+                          </td>
+                          <td>CASE-1029</td>
+                          <td><span class="pill small">Tourist</span></td>
+                          <td>Schengen</td>
+                          <td><span class="pill small info">In progress</span></td>
+                          <td>2026-02-14</td>
+                          <td><span class="pill small warn">2</span></td>
+                          <td class="actions-cell">
+                            <button class="pill" type="button">View</button>
+                            <button class="pill" type="button">Edit</button>
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <td><input type="checkbox" aria-label="Select row" /></td>
+                          <td>
+                            <div class="row-cell">
+                              <div class="avatar small">JR</div>
+                              <div>
+                                <div class="row-title">Jose Rodriguez</div>
+                                <div class="row-subtitle">Passport: Y9988776</div>
+                              </div>
+                            </div>
+                          </td>
+                          <td>CASE-1182</td>
+                          <td><span class="pill small">Business</span></td>
+                          <td>USA</td>
+                          <td><span class="pill small success">Approved</span></td>
+                          <td>2027-08-01</td>
+                          <td><span class="pill small muted">0</span></td>
+                          <td class="actions-cell">
+                            <button class="pill" type="button">View</button>
+                            <button class="pill" type="button">Edit</button>
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <td><input type="checkbox" aria-label="Select row" /></td>
+                          <td>
+                            <div class="row-cell">
+                              <div class="avatar small">LM</div>
+                              <div>
+                                <div class="row-title">Linh Mai</div>
+                                <div class="row-subtitle">Passport: P4455667</div>
+                              </div>
+                            </div>
+                          </td>
+                          <td>CASE-1207</td>
+                          <td><span class="pill small">Student</span></td>
+                          <td>UK</td>
+                          <td><span class="pill small">Submitted</span></td>
+                          <td>—</td>
+                          <td><span class="pill small muted">0</span></td>
+                          <td class="actions-cell">
+                            <button class="pill" type="button">View</button>
+                            <button class="pill" type="button">Edit</button>
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <td><input type="checkbox" aria-label="Select row" /></td>
+                          <td>
+                            <div class="row-cell">
+                              <div class="avatar small">SH</div>
+                              <div>
+                                <div class="row-title">Sara Haddad</div>
+                                <div class="row-subtitle">Passport: K1122334</div>
+                              </div>
+                            </div>
+                          </td>
+                          <td>CASE-1043</td>
+                          <td><span class="pill small">Work</span></td>
+                          <td>Australia</td>
+                          <td><span class="pill small danger">Rejected</span></td>
+                          <td>—</td>
+                          <td><span class="pill small warn">1</span></td>
+                          <td class="actions-cell">
+                            <button class="pill" type="button">View</button>
+                            <button class="pill" type="button">Edit</button>
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <td><input type="checkbox" aria-label="Select row" /></td>
+                          <td>
+                            <div class="row-cell">
+                              <div class="avatar small">PG</div>
+                              <div>
+                                <div class="row-title">Paulo Gomes</div>
+                                <div class="row-subtitle">Passport: Z7654321</div>
+                              </div>
+                            </div>
+                          </td>
+                          <td>CASE-0991</td>
+                          <td><span class="pill small">Tourist</span></td>
+                          <td>Japan</td>
+                          <td><span class="pill small warn">Expiring soon</span></td>
+                          <td>2025-11-10</td>
+                          <td><span class="pill small muted">0</span></td>
+                          <td class="actions-cell">
+                            <button class="pill" type="button">View</button>
+                            <button class="pill" type="button">Edit</button>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </article>
+            </div>
+
+            <!-- Details panel -->
+            <aside class="panel tracker-details" aria-label="Case details">
+              <header class="panel-header">
+                <h3 class="panel-title">Case — Anita Kumar</h3>
+                <span class="pill small info">In progress</span>
+              </header>
+              <div class="panel-body">
+                <div class="mini-info">
+                  <div><dt>Case ID</dt><dd>CASE-1029</dd></div>
+                  <div><dt>Owner</dt><dd>Team A</dd></div>
+                  <div><dt>Country</dt><dd>Schengen</dd></div>
+                  <div><dt>Visa type</dt><dd>Tourist</dd></div>
+                  <div><dt>Passport</dt><dd>N1234567</dd></div>
+                  <div><dt>Expiry</dt><dd>2026-02-14</dd></div>
+                </div>
+
+                <div>
+                  <div class="section-title">Applicant</div>
+                  <ul class="list">
+                    <li>Full name — Anita Kumar</li>
+                    <li>DOB — 1994-05-18</li>
+                    <li>Nationality — India</li>
+                  </ul>
+                </div>
+
+                <div>
+                  <div class="section-title">Checklist</div>
+                  <ul class="doc-list">
+                    <li>
+                      <span>Passport copy</span>
+                      <span class="pill small success">Received</span>
+                    </li>
+                    <li>
+                      <span>Photo</span>
+                      <span class="pill small success">Received</span>
+                    </li>
+                    <li>
+                      <span>Flight itinerary</span>
+                      <span class="pill small warn">Pending</span>
+                    </li>
+                    <li>
+                      <span>Hotel booking</span>
+                      <span class="pill small warn">Pending</span>
+                    </li>
+                    <li>
+                      <span>Insurance</span>
+                      <span class="pill small danger">Expired</span>
+                    </li>
+                  </ul>
+                </div>
+
+                <div>
+                  <div class="section-title">Milestones</div>
+                  <div class="progress">
+                    <div class="progress-row">
+                      <div class="progress-label">Docs</div>
+                      <div class="progress-track" role="progressbar" aria-label="Docs" aria-valuemin="0" aria-valuemax="100" aria-valuenow="60">
+                        <span class="progress-bar" style="--w:60%"></span>
+                      </div>
+                      <div class="progress-value">3/5</div>
+                    </div>
+                    <div class="progress-row">
+                      <div class="progress-label">Overall</div>
+                      <div class="progress-track" role="progressbar" aria-label="Overall" aria-valuemin="0" aria-valuemax="100" aria-valuenow="45">
+                        <span class="progress-bar" style="--w:45%"></span>
+                      </div>
+                      <div class="progress-value">45%</div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="actions-row" style="justify-content: space-between;">
+                  <button class="pill" type="button">Download packet</button>
+                  <div>
+                    <button class="pill" type="button">Request docs</button>
+                    <button class="pill" type="button">Update status</button>
+                  </div>
+                </div>
+              </div>
+            </aside>
+          </div>
+        </div>
+        <footer class="app-footer" aria-label="Status bar">
+          DMC360 v1.0.0-alpha.2
+        </footer>
+      </section>
+    </div>
+  </body>
+</html>

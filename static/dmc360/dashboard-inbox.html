@@ -1,0 +1,301 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>DMC 360 — Inbox</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div class="layout">
+      <aside class="sidebar">
+        <div class="toolbar">
+          <a href="/" class="toolbar__app" aria-label="App">
+            D
+          </a>
+
+          <hr class="toolbar__divider" />
+
+          <nav class="toolbar__nav" aria-label="Primary">
+            <a class="toolbar__btn" aria-label="Home" title="Home" href="./dashboard-home.html">
+              <svg class="toolbar__icon" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M4 10.5 12 4l8 6.5V20a2 2 0 0 1-2 2h-4v-6H10v6H6a2 2 0 0 1-2-2z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+            <a class="toolbar__btn toolbar__btn--active" aria-label="Conversations" title="Conversations" aria-current="page" href="./dashboard-inbox.html">
+              <svg class="toolbar__icon" viewBox="0 0 24 24" aria-hidden="true">
+                <rect x="3" y="4" width="18" height="12" rx="2" ry="2" fill="none" stroke="currentColor" stroke-width="1.8"/>
+                <path d="M3 8l9 5 9-5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+            <a class="toolbar__btn" aria-label="Modules" title="Modules" href="./dashboard-modules.html">
+              <svg class="toolbar__icon" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M4 4h7v7H4zM13 4h7v7h-7zM4 13h7v7H4zM13 13h7v7h-7z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/>
+              </svg>
+            </a>
+
+            <a class="toolbar__btn" aria-label="CRM" title="CRM" href="./dashboard-crm.html">
+              <svg class="toolbar__icon" viewBox="0 0 24 24" aria-hidden="true">
+                <circle cx="12" cy="7.5" r="3" fill="none" stroke="currentColor" stroke-width="1.8"/>
+                <path d="M4 20a8 5 0 0 1 16 0" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+
+            <a class="toolbar__btn" aria-label="Vendors" title="Vendors" href="./dashboard-vendors.html">
+              <svg class="toolbar__icon" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M3 10h18l-2-5H5l-2 5Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
+                <path d="M5 10v8h14v-8" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
+              </svg>
+            </a>
+
+            <a class="toolbar__btn" aria-label="Visa & Docs" title="Visa & Docs" href="./dashboard-visa-docs.html">
+              <svg class="toolbar__icon" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M7 3h8l4 4v14H7V3Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
+                <path d="M15 3v4h4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
+                <path d="M9 14l2 2 4-4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+          </nav>
+
+          <div class="toolbar__spacer" aria-hidden="true"></div>
+
+          <a class="toolbar__btn" aria-label="Settings" title="Settings" href="./dashboard-settings.html">
+            <svg class="toolbar__icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M9.594 3.94c.09-.542.56-.94 1.11-.94h2.593c.55 0 1.02.398 1.11.94l.213 1.281c.063.374.313.686.645.87.074.04.147.083.22.127.325.196.72.257 1.075.124l1.217-.456a1.125 1.125 0 0 1 1.37.49l1.296 2.247a1.125 1.125 0 0 1-.26 1.431l-1.003.827c-.293.241-.438.613-.43.992a7.723 7.723 0 0 1 0 .255c-.008.378.137.75.43.991l1.004.827c.424.35.534.955.26 1.43l-1.298 2.247a1.125 1.125 0 0 1-1.369.491l-1.217-.456c-.355-.133-.75-.072-1.076.124a6.47 6.47 0 0 1-.22.128c-.331.183-.581.495-.644.869l-.213 1.281c-.09.543-.56.94-1.11.94h-2.594c-.55 0-1.019-.398-1.11-.94l-.213-1.281c-.062-.374-.312-.686-.644-.87a6.52 6.52 0 0 1-.22-.127c-.325-.196-.72-.257-1.076-.124l-1.217.456a1.125 1.125 0 0 1-1.369-.49l-1.297-2.247a1.125 1.125 0 0 1 .26-1.431l1.004-.827c.292-.24.437-.613.43-.991a6.932 6.932 0 0 1 0-.255c.007-.38-.138-.751-.43-.992l-1.004-.827a1.125 1.125 0 0 1-.26-1.43l1.297-2.247a1.125 1.125 0 0 1 1.37-.491l1.216.456c.356.133.751.072 1.076-.124.072-.044.146-.086.22-.128.332-.183.582-.495.644-.869l.214-1.28Z" />
+              <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+            </svg>
+          </a>
+        </div>
+      </aside>
+
+      <section class="main">
+        <header class="app-header">
+          <h1 class="page-title">Inbox</h1>
+          <div class="header-right">
+            <details class="user-menu">
+              <summary class="user-menu__summary" aria-label="Open user menu">
+                <div class="user-menu__avatar" aria-hidden="true">JD</div>
+                <div class="user-menu__meta">
+                  <div class="user-menu__name">John Doe</div>
+                  <div class="user-menu__role">Sales Agent</div>
+                </div>
+                <svg class="user-menu__chevron" viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </summary>
+              <ul class="user-menu__list" role="menu">
+                <li class="user-menu__item"><a class="user-menu__link" href="#" role="menuitem">Profile</a></li>
+                <li class="user-menu__item"><a class="user-menu__link" href="#" role="menuitem">Preferences</a></li>
+                <li class="user-menu__item"><hr /></li>
+                <li class="user-menu__item"><a class="user-menu__link" href="./login.html" role="menuitem">Sign out</a></li>
+              </ul>
+            </details>
+          </div>
+        </header>
+
+        <div class="content">
+          <div class="inbox">
+            <!-- Threads (left) -->
+            <aside class="panel threads inbox__threads" aria-label="Conversations">
+              <div class="thread-tools">
+                <div class="input-wrap">
+                  <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+                    <circle cx="11" cy="11" r="7" fill="none" stroke="currentColor" stroke-width="1.6"/>
+                    <path d="M20 20l-3.5-3.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+                  </svg>
+                  <input class="text-input" type="search" placeholder="Search" />
+                </div>
+                <div class="thread-filters">
+                  <button class="pill" aria-pressed="true">All</button>
+                  <button class="pill">Unread</button>
+                  <button class="pill">Assigned to me</button>
+                </div>
+              </div>
+
+              <ul class="thread-list">
+                <li class="thread-item is-active">
+                  <div class="thread-chan" aria-hidden="true" title="Email">
+                    <svg class="icon" viewBox="0 0 24 24">
+                      <rect x="3" y="4" width="18" height="12" rx="2" ry="2" fill="none" stroke="currentColor" stroke-width="1.6"/>
+                      <path d="M3 8l9 5 9-5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                  </div>
+                  <div class="thread-main">
+                    <div class="thread-top">
+                      <strong class="thread-title">ACME — Summer group inquiry</strong>
+                      <span class="thread-time">2m</span>
+                    </div>
+                    <div class="thread-bottom">
+                      <span class="thread-snippet">Could you share options for 20 pax in July?</span>
+                      <span class="unread-dot" title="Unread"></span>
+                    </div>
+                  </div>
+                </li>
+
+                <li class="thread-item">
+                  <div class="thread-chan" aria-hidden="true" title="Chat">
+                    <svg class="icon" viewBox="0 0 24 24">
+                      <rect x="3" y="4" width="18" height="12" rx="6" ry="6" fill="none" stroke="currentColor" stroke-width="1.6"/>
+                      <path d="M9 20c4 0 9-3 9-7" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+                    </svg>
+                  </div>
+                  <div class="thread-main">
+                    <div class="thread-top">
+                      <strong class="thread-title">Oceanic Travels</strong>
+                      <span class="thread-time">1h</span>
+                    </div>
+                    <div class="thread-bottom">
+                      <span class="thread-snippet">Thanks for the quote. One more question…</span>
+                    </div>
+                  </div>
+                </li>
+
+                <li class="thread-item">
+                  <div class="thread-chan" aria-hidden="true" title="Phone">
+                    <svg class="icon" viewBox="0 0 24 24">
+                      <path d="M6 3c1 4 5 8 9 9l3-3 3 3-3 3c-2 2-9-1-12-4S4 5 6 3z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                  </div>
+                  <div class="thread-main">
+                    <div class="thread-top">
+                      <strong class="thread-title">Smith Family</strong>
+                      <span class="thread-time">Yesterday</span>
+                    </div>
+                    <div class="thread-bottom">
+                      <span class="thread-snippet">Voicemail: date change request.</span>
+                      <span class="pill small">Won</span>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </aside>
+
+            <!-- Conversation (center) -->
+            <section class="panel conversation inbox__conversation" aria-label="Conversation">
+              <header class="conv-header">
+                <div class="conv-title">
+                  <strong>ACME — Summer group inquiry</strong>
+                  <span class="pill">Lead</span>
+                </div>
+                <div class="conv-actions">
+                  <button class="icon-btn" aria-label="Tag">
+                    <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+                      <path d="M3 12l9-9 9 9-9 9z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/>
+                      <circle cx="12" cy="12" r="2" fill="currentColor"/>
+                    </svg>
+                  </button>
+                  <button class="icon-btn" aria-label="Attach file">
+                    <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+                      <path d="M7 12v5a5 5 0 0 0 10 0V8a3 3 0 0 0-6 0v8a1 1 0 0 0 2 0V9" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                  </button>
+                </div>
+              </header>
+
+              <div class="messages" role="log" aria-live="polite">
+                <article class="msg in">
+                  <header class="msg-meta">
+                    <span class="from">ACME (via email)</span>
+                    <time class="time">2m ago</time>
+                  </header>
+                  <div class="msg-body">
+                    Hi, could you share options for a 20-person group in July? Looking at Bali or Lisbon.
+                  </div>
+                </article>
+
+                <article class="msg out">
+                  <header class="msg-meta">
+                    <span class="from">You</span>
+                    <time class="time">Just now</time>
+                  </header>
+                  <div class="msg-body">
+                    Thanks for reaching out! I’ll send 2–3 options shortly. Any budget or dates to keep in mind?
+                  </div>
+                </article>
+              </div>
+
+              <form class="composer" action="#" method="post">
+                <textarea class="text-input" rows="3" placeholder="Write a reply…"></textarea>
+                <div class="composer-actions">
+                  <div class="left-actions">
+                    <button class="icon-btn" type="button" aria-label="Attach file">
+                      <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M7 12v5a5 5 0 0 0 10 0V8a3 3 0 0 0-6 0v8a1 1 0 0 0 2 0V9" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                    </button>
+                  </div>
+                  <button class="btn" type="submit" aria-label="Send">Send</button>
+                </div>
+              </form>
+            </section>
+
+            <!-- Details (right) -->
+            <aside class="panel details inbox__details" aria-label="Lead details">
+              <section class="detail-section">
+                <h3 class="section-title">Overview</h3>
+                <div class="lead-title">
+                  <strong>ACME Corporation</strong>
+                  <div class="labels">
+                    <span class="pill small">Group</span>
+                    <span class="pill small">B2B</span>
+                  </div>
+                </div>
+                <dl class="mini-info">
+                  <div><dt>Contact</dt><dd>jane@acme.com</dd></div>
+                  <div><dt>Phone</dt><dd>+1 415 555 0123</dd></div>
+                  <div><dt>Destination</dt><dd>Bali / Lisbon</dd></div>
+                </dl>
+              </section>
+
+              <section class="detail-section">
+                <h3 class="section-title">Stage</h3>
+                <div class="stages" role="radiogroup" aria-label="Pipeline stage">
+                  <input type="radio" id="stage-new" name="stage" checked />
+                  <label for="stage-new">New</label>
+
+                  <input type="radio" id="stage-qualified" name="stage" />
+                  <label for="stage-qualified">Qualified</label>
+
+                  <input type="radio" id="stage-proposal" name="stage" />
+                  <label for="stage-proposal">Proposal</label>
+
+                  <input type="radio" id="stage-negotiation" name="stage" />
+                  <label for="stage-negotiation">Negotiation</label>
+
+                  <input type="radio" id="stage-won" name="stage" />
+                  <label for="stage-won">Won</label>
+
+                  <input type="radio" id="stage-lost" name="stage" />
+                  <label for="stage-lost">Lost</label>
+                </div>
+              </section>
+
+              <section class="detail-section">
+                <h3 class="section-title">Next action</h3>
+                <div class="mini-form">
+                  <input class="text-input" type="text" placeholder="e.g., Send options" />
+                  <input class="text-input" type="date" />
+                </div>
+              </section>
+
+              <section class="detail-section">
+                <h3 class="section-title">Comments</h3>
+                <ul class="list">
+                  <li>Waiting on hotel availability for July.</li>
+                  <li>Prefers 4-star, beach access.</li>
+                </ul>
+                <textarea class="text-input" rows="2" placeholder="Add a comment…"></textarea>
+                <div class="actions-row">
+                  <button class="btn" type="button">Add comment</button>
+                </div>
+              </section>
+            </aside>
+          </div>
+        </div>
+        <footer class="app-footer" aria-label="Status bar">
+          DMC360 v1.0.0-alpha.2
+        </footer>
+      </section>
+    </div>
+  </body>
+</html>

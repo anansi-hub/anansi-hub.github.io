@@ -1,0 +1,487 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>DMC 360 — Vendor Directory</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div class="layout">
+      <aside class="sidebar">
+        <div class="toolbar">
+          <a href="/" class="toolbar__app" aria-label="App">D</a>
+
+          <hr class="toolbar__divider" />
+
+          <nav class="toolbar__nav" aria-label="Primary">
+            <a class="toolbar__btn" aria-label="Home" title="Home" href="./dashboard-home.html">
+              <svg class="toolbar__icon" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M4 10.5 12 4l8 6.5V20a2 2 0 0 1-2 2h-4v-6H10v6H6a2 2 0 0 1-2-2z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+            <a class="toolbar__btn" aria-label="Conversations" title="Conversations" href="./dashboard-inbox.html">
+              <svg class="toolbar__icon" viewBox="0 0 24 24" aria-hidden="true">
+                <rect x="3" y="4" width="18" height="12" rx="2" ry="2" fill="none" stroke="currentColor" stroke-width="1.8"/>
+                <path d="M3 8l9 5 9-5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+            <a class="toolbar__btn" aria-label="Modules" title="Modules" href="./dashboard-modules.html">
+              <svg class="toolbar__icon" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M4 4h7v7H4zM13 4h7v7h-7zM4 13h7v7H4zM13 13h7v7h-7z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/>
+              </svg>
+            </a>
+            <a class="toolbar__btn" aria-label="CRM" title="CRM" href="./dashboard-crm.html">
+              <svg class="toolbar__icon" viewBox="0 0 24 24" aria-hidden="true">
+                <circle cx="12" cy="7.5" r="3" fill="none" stroke="currentColor" stroke-width="1.8"/>
+                <path d="M4 20a8 5 0 0 1 16 0" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+            <a class="toolbar__btn toolbar__btn--active" aria-label="Vendors" title="Vendors" aria-current="page" href="./dashboard-vendors.html">
+              <svg class="toolbar__icon" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M3 10h18l-2-5H5l-2 5Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
+                <path d="M5 10v8h14v-8" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
+              </svg>
+            </a>
+            <a class="toolbar__btn" aria-label="Visa & Docs" title="Visa & Docs" href="./dashboard-visa-docs.html">
+              <svg class="toolbar__icon" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M7 3h8l4 4v14H7V3Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
+                <path d="M15 3v4h4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
+                <path d="M9 14l2 2 4-4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+          </nav>
+
+          <div class="toolbar__spacer" aria-hidden="true"></div>
+
+          <a class="toolbar__btn" aria-label="Settings" title="Settings" href="./dashboard-settings.html">
+            <svg class="toolbar__icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M9.594 3.94c.09-.542.56-.94 1.11-.94h2.593c.55 0 1.02.398 1.11.94l.213 1.281c.063.374.313.686.645.87.074.04.147.083.22.127.325.196.72.257 1.075.124l1.217-.456a1.125 1.125 0 0 1 1.37.49l1.296 2.247a1.125 1.125 0 0 1-.26 1.431l-1.003.827c-.293.241-.438.613-.43.992a7.723 7.723 0 0 1 0 .255c-.008.378.137.75.43.991l1.004.827c.424.35.534.955.26 1.43l-1.298 2.247a1.125 1.125 0 0 1-1.369.491l-1.217-.456c-.355-.133-.75-.072-1.076.124a6.47 6.47 0 0 1-.22.128c-.331.183-.581.495-.644.869l-.213 1.281c-.09.543-.56.94-1.11.94h-2.594c-.55 0-1.019-.398-1.11-.94l-.213-1.281c-.062-.374-.312-.686-.644-.87a6.52 6.52 0 0 1-.22-.127c-.325-.196-.72-.257-1.076-.124l-1.217.456a1.125 1.125 0 0 1-1.369-.49l-1.297-2.247a1.125 1.125 0 0 1 .26-1.431l1.004-.827c.292-.24.437-.613.43-.991a6.932 6.932 0 0 1 0-.255c.007-.38-.138-.751-.43-.992l-1.004-.827a1.125 1.125 0 0 1-.26-1.43l1.297-2.247a1.125 1.125 0 0 1 1.37-.491l1.216.456c.356.133.751.072 1.076-.124.072-.044.146-.086.22-.128.332-.183.582-.495.644-.869l.214-1.28Z" />
+              <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+            </svg>
+          </a>
+        </div>
+      </aside>
+
+      <section class="main">
+        <header class="app-header">
+          <h1 class="page-title">Vendor Directory</h1>
+          <div class="header-right">
+            <details class="user-menu">
+              <summary class="user-menu__summary" aria-label="Open user menu">
+                <div class="user-menu__avatar" aria-hidden="true">JD</div>
+                <div class="user-menu__meta">
+                  <div class="user-menu__name">John Doe</div>
+                  <div class="user-menu__role">Sales Agent</div>
+                </div>
+                <svg class="user-menu__chevron" viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </summary>
+              <ul class="user-menu__list" role="menu">
+                <li class="user-menu__item"><a class="user-menu__link" href="#" role="menuitem">Profile</a></li>
+                <li class="user-menu__item"><a class="user-menu__link" href="#" role="menuitem">Preferences</a></li>
+                <li class="user-menu__item"><hr /></li>
+                <li class="user-menu__item"><a class="user-menu__link" href="./login.html" role="menuitem">Sign out</a></li>
+              </ul>
+            </details>
+          </div>
+        </header>
+
+        <div class="content">
+          <div class="vendors-page">
+            <div class="vendors-left">
+              <!-- Filters/search -->
+              <article class="panel">
+                <div class="panel-body">
+                  <div class="modules-toolbar">
+                    <div class="input-wrap">
+                      <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+                        <circle cx="11" cy="11" r="7" fill="none" stroke="currentColor" stroke-width="1.6"/>
+                        <path d="M20 20l-3.5-3.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+                      </svg>
+                      <input class="text-input" type="search" placeholder="Search vendors by name, city, tag…" />
+                    </div>
+                    <div class="thread-filters">
+                      <button class="pill" aria-pressed="true">All</button>
+                      <button class="pill">Hotels</button>
+                      <button class="pill">Transport</button>
+                      <button class="pill">Drivers</button>
+                      <button class="pill">Tour guides</button>
+                      <button class="pill">Activities</button>
+                    </div>
+                    <div class="mini-grid">
+                      <select class="text-input" aria-label="Status">
+                        <option selected>Any status</option>
+                        <option>Verified</option>
+                        <option>Pending</option>
+                        <option>Suspended</option>
+                      </select>
+                      <select class="text-input" aria-label="Country">
+                        <option selected>Any country</option>
+                        <option>USA</option>
+                        <option>UK</option>
+                        <option>Italy</option>
+                        <option>Thailand</option>
+                      </select>
+                      <button class="pill" type="button">Import CSV</button>
+                      <button class="pill" type="button">Export</button>
+                    </div>
+                  </div>
+                </div>
+              </article>
+
+              <!-- Vendor list -->
+              <article class="panel">
+                <header class="panel-header">
+                  <h3 class="panel-title">Vendors</h3>
+                  <div class="panel-actions">
+                    <label class="checkbox">
+                      <input type="checkbox" />
+                      <span>Select all</span>
+                    </label>
+                    <button class="pill" type="button">Bulk actions</button>
+                    <!-- Add Vendor button moved into main content area -->
+                    <button class="btn" type="button" id="add-vendor-btn">Add vendor</button>
+                  </div>
+                </header>
+                <div class="panel-body">
+                  <div class="table-wrap">
+                    <table class="table vendor-table" aria-label="Vendors">
+                      <thead>
+                        <tr>
+                          <th style="width:32px;"></th>
+                          <th>Name</th>
+                          <th>Category</th>
+                          <th>Location</th>
+                          <th>Rating</th>
+                          <th>Status</th>
+                          <th>Updated</th>
+                          <th style="text-align:right;">Actions</th>
+                        </tr>
+                      </thead>
+                      <tbody id="vendors-tbody">
+                        <tr data-vendor="grand-harbor" tabindex="0" class="vendor-row is-selected">
+                          <td><input type="checkbox" aria-label="Select row" /></td>
+                          <td>
+                            <div class="row-cell">
+                              <div class="avatar small">H</div>
+                              <div>
+                                <div class="row-title">Grand Harbor Hotel</div>
+                                <div class="row-subtitle">ID: VND-1024</div>
+                              </div>
+                            </div>
+                          </td>
+                          <td><span class="pill small">Hotel</span></td>
+                          <td>Lisbon, PT</td>
+                          <td>
+                            <div class="stars" aria-label="4.5/5">
+                              <span class="star full"></span><span class="star full"></span><span class="star full"></span><span class="star full"></span><span class="star half"></span>
+                            </div>
+                          </td>
+                          <td><span class="pill small success">Verified</span></td>
+                          <td>2d ago</td>
+                          <td class="actions-cell">
+                            <button class="pill" type="button">View</button>
+                            <button class="pill" type="button">Edit</button>
+                          </td>
+                        </tr>
+                        <tr data-vendor="quick-ride" tabindex="0" class="vendor-row">
+                          <td><input type="checkbox" aria-label="Select row" /></td>
+                          <td>
+                            <div class="row-cell">
+                              <div class="avatar small">T</div>
+                              <div>
+                                <div class="row-title">QuickRide Transport</div>
+                                <div class="row-subtitle">ID: VND-2091</div>
+                              </div>
+                            </div>
+                          </td>
+                          <td><span class="pill small">Transport</span></td>
+                          <td>Bangkok, TH</td>
+                          <td>
+                            <div class="stars" aria-label="4/5">
+                              <span class="star full"></span><span class="star full"></span><span class="star full"></span><span class="star full"></span><span class="star"></span>
+                            </div>
+                          </td>
+                          <td><span class="pill small">Pending</span></td>
+                          <td>5h ago</td>
+                          <td class="actions-cell">
+                            <button class="pill" type="button">View</button>
+                            <button class="pill" type="button">Edit</button>
+                          </td>
+                        </tr>
+                        <tr data-vendor="ana-silva" tabindex="0" class="vendor-row">
+                          <td><input type="checkbox" aria-label="Select row" /></td>
+                          <td>
+                            <div class="row-cell">
+                              <div class="avatar small">G</div>
+                              <div>
+                                <div class="row-title">Ana Silva</div>
+                                <div class="row-subtitle">ID: VND-3110</div>
+                              </div>
+                            </div>
+                          </td>
+                          <td><span class="pill small">Tour guide</span></td>
+                          <td>Porto, PT</td>
+                          <td>
+                            <div class="stars" aria-label="5/5">
+                              <span class="star full"></span><span class="star full"></span><span class="star full"></span><span class="star full"></span><span class="star full"></span>
+                            </div>
+                          </td>
+                          <td><span class="pill small success">Verified</span></td>
+                          <td>1w ago</td>
+                          <td class="actions-cell">
+                            <button class="pill" type="button">View</button>
+                            <button class="pill" type="button">Edit</button>
+                          </td>
+                        </tr>
+                        <tr data-vendor="maria-rocha" tabindex="0" class="vendor-row">
+                          <td><input type="checkbox" aria-label="Select row" /></td>
+                          <td>
+                            <div class="row-cell">
+                              <div class="avatar small">D</div>
+                              <div>
+                                <div class="row-title">Maria Rocha</div>
+                                <div class="row-subtitle">ID: VND-4150</div>
+                              </div>
+                            </div>
+                          </td>
+                          <td><span class="pill small">Driver</span></td>
+                          <td>Faro, PT</td>
+                          <td>
+                            <div class="stars" aria-label="3.5/5">
+                              <span class="star full"></span><span class="star full"></span><span class="star full"></span><span class="star half"></span><span class="star"></span>
+                            </div>
+                          </td>
+                          <td><span class="pill small warn">Suspended</span></td>
+                          <td>3w ago</td>
+                          <td class="actions-cell">
+                            <button class="pill" type="button">View</button>
+                            <button class="pill" type="button">Edit</button>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </article>
+            </div>
+
+            <!-- Details side panel -->
+            <aside class="panel vendor-details" aria-label="Vendor details">
+              <header class="panel-header">
+                <h3 class="panel-title" id="vd-name">Grand Harbor Hotel</h3>
+                <span id="vd-status" class="pill small success">Verified</span>
+              </header>
+              <div class="panel-body">
+                <div class="mini-info">
+                  <div><dt>Category</dt><dd id="vd-category">Hotel</dd></div>
+                  <div><dt>Location</dt><dd id="vd-location">Lisbon, Portugal</dd></div>
+                  <div><dt>Code</dt><dd id="vd-code">VND-1024</dd></div>
+                </div>
+
+                <div>
+                  <div class="section-title">Contacts</div>
+                  <ul class="list">
+                    <li>Front desk — +351 21 000 000</li>
+                    <li>Sales — sales@grandharbor.pt</li>
+                  </ul>
+                </div>
+
+                <div>
+                  <div class="section-title">Compliance</div>
+                  <ul class="list">
+                    <li>Business license — Valid to 2026-12-31</li>
+                    <li>Insurance — Expires 2025-11-15</li>
+                    <li>W-8/W-9 — On file</li>
+                  </ul>
+                </div>
+
+                <div>
+                  <div class="section-title">Tags</div>
+                  <ul class="mini-tags">
+                    <li>5-star</li><li>Waterfront</li><li>Conference</li>
+                  </ul>
+                </div>
+
+                <div class="actions-row" style="justify-content: space-between;">
+                  <button class="pill" type="button">Request documents</button>
+                  <div>
+                    <button class="pill" type="button">Edit</button>
+                    <button class="pill" type="button">Disable</button>
+                  </div>
+                </div>
+              </div>
+            </aside>
+          </div>
+        </div>
+        <footer class="app-footer" aria-label="Status bar">
+          DMC360 v1.0.0-alpha.2
+        </footer>
+      </section>
+    </div>
+
+    <!-- Add vendor dialog -->
+    <dialog id="addVendorDialog" class="modal" aria-labelledby="addVendorTitle">
+      <form method="dialog" id="addVendorForm" class="mini-form">
+        <header class="panel-header">
+          <h3 class="panel-title" id="addVendorTitle">Add vendor</h3>
+        </header>
+        <div class="panel-body">
+          <div class="mini-grid">
+            <input class="text-input" name="name" placeholder="Vendor name" required />
+            <select class="text-input" name="category" required>
+              <option value="Hotel">Hotel</option>
+              <option value="Transport">Transport</option>
+              <option value="Driver">Driver</option>
+              <option value="Tour guide">Tour guide</option>
+              <option value="Activity">Activity</option>
+              <option value="Other">Other</option>
+            </select>
+            <input class="text-input" name="city" placeholder="City" />
+            <input class="text-input" name="country" placeholder="Country" />
+          </div>
+
+          <div class="mini-grid">
+            <input class="text-input" type="text" name="contactName" placeholder="Contact name" />
+            <input class="text-input" type="email" name="contactEmail" placeholder="Contact email" />
+            <input class="text-input" type="tel" name="contactPhone" placeholder="Phone" />
+            <select class="text-input" name="status">
+              <option value="Verified">Verified</option>
+              <option value="Pending" selected>Pending</option>
+              <option value="Suspended">Suspended</option>
+            </select>
+          </div>
+
+          <div class="mini-grid">
+            <input class="text-input" type="number" name="rating" min="0" max="5" step="0.5" placeholder="Rating (0–5)" />
+            <input class="text-input" name="tags" placeholder="Tags (comma separated)" />
+          </div>
+
+          <div class="actions-row" style="justify-content: flex-end; gap:8px;">
+            <button class="pill" type="button" id="cancelAddVendor">Cancel</button>
+            <button class="btn" value="confirm" id="confirmAddVendor">Create vendor</button>
+          </div>
+        </div>
+      </form>
+    </dialog>
+
+    <script>
+      // Simple selection + details sync + add vendor
+      (function () {
+        const tbody = document.getElementById('vendors-tbody');
+        const rowsSel = () => Array.from(tbody.querySelectorAll('.vendor-row'));
+
+        const nameEl = document.getElementById('vd-name');
+        const statusEl = document.getElementById('vd-status');
+        const catEl = document.getElementById('vd-category');
+        const locEl = document.getElementById('vd-location');
+        const codeEl = document.getElementById('vd-code');
+
+        function starHTML(rating) {
+          const r = Math.max(0, Math.min(5, Number(rating) || 0));
+          const full = Math.floor(r);
+          const half = r - full >= 0.5 ? 1 : 0;
+          const empty = 5 - full - half;
+          return [
+            ...Array(full).fill('<span class="star full"></span>'),
+            ...Array(half).fill('<span class="star half"></span>'),
+            ...Array(empty).fill('<span class="star"></span>')
+          ].join('');
+        }
+
+        function selectRow(tr) {
+          rowsSel().forEach(r => r.classList.remove('is-selected'));
+          tr.classList.add('is-selected');
+
+          const name = tr.querySelector('.row-title')?.textContent?.trim() || '';
+          const statusPill = tr.querySelector('td:nth-child(6) .pill');
+          const category = tr.querySelector('td:nth-child(3)')?.innerText.trim() || '';
+          const location = tr.querySelector('td:nth-child(4)')?.innerText.trim() || '';
+          const codeText = tr.querySelector('.row-subtitle')?.textContent?.trim() || '';
+          const code = (codeText.match(/VND-\d+/) || [codeText])[0];
+
+          nameEl.textContent = name;
+          if (statusPill) {
+            statusEl.textContent = statusPill.textContent.trim();
+            const variant = Array.from(statusPill.classList).find(c => c === 'success' || c === 'warn') || '';
+            statusEl.className = 'pill small ' + variant;
+          }
+          catEl.textContent = category;
+          locEl.textContent = location;
+          codeEl.textContent = code;
+        }
+
+        function bindRow(tr) {
+          tr.addEventListener('click', () => selectRow(tr));
+          tr.addEventListener('keydown', (e) => {
+            if (e.key === 'Enter' || e.key === ' ') {
+              e.preventDefault();
+              selectRow(tr);
+            }
+          });
+        }
+
+        rowsSel().forEach(bindRow);
+        if (rowsSel().length) selectRow(rowsSel()[0]);
+
+        // Add vendor dialog logic
+        const dialog = document.getElementById('addVendorDialog');
+        const openBtn = document.getElementById('add-vendor-btn');
+        const cancelBtn = document.getElementById('cancelAddVendor');
+        const form = document.getElementById('addVendorForm');
+        const confirmBtn = document.getElementById('confirmAddVendor');
+
+        openBtn?.addEventListener('click', () => dialog.showModal());
+        cancelBtn?.addEventListener('click', () => dialog.close());
+
+        form?.addEventListener('submit', (e) => {
+          e.preventDefault();
+        });
+
+        confirmBtn?.addEventListener('click', (e) => {
+          e.preventDefault();
+          const data = Object.fromEntries(new FormData(form).entries());
+          const id = 'VND-' + Math.floor(1000 + Math.random() * 9000);
+          const initial = (data.name || '?').trim().charAt(0).toUpperCase() || '?';
+          const statusClass = data.status === 'Verified' ? 'success' : (data.status === 'Suspended' ? 'warn' : '');
+          const location = [data.city, data.country].filter(Boolean).join(', ') || '—';
+
+          const tr = document.createElement('tr');
+          tr.className = 'vendor-row';
+          tr.tabIndex = 0;
+          tr.innerHTML = `
+            <td><input type="checkbox" aria-label="Select row" /></td>
+            <td>
+              <div class="row-cell">
+                <div class="avatar small">${initial}</div>
+                <div>
+                  <div class="row-title">${data.name || 'New vendor'}</div>
+                  <div class="row-subtitle">ID: ${id}</div>
+                </div>
+              </div>
+            </td>
+            <td><span class="pill small">${data.category || 'Other'}</span></td>
+            <td>${location}</td>
+            <td><div class="stars" aria-label="${data.rating || 0}/5">${starHTML(data.rating)}</div></td>
+            <td><span class="pill small ${statusClass}">${data.status || 'Pending'}</span></td>
+            <td>just now</td>
+            <td class="actions-cell">
+              <button class="pill" type="button">View</button>
+              <button class="pill" type="button">Edit</button>
+            </td>
+          `;
+          tbody.prepend(tr);
+          bindRow(tr);
+          selectRow(tr);
+
+          dialog.close();
+          form.reset();
+        });
+
+        // Close dialog with ESC/backdrop is native to <dialog>
+      })();
+    </script>
+  </body>
+</html>

@@ -1,0 +1,298 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>DMC 360 — Home</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/modal.css" />
+  </head>
+  <body>
+    <div class="layout">
+      <aside class="sidebar">
+        <div class="toolbar">
+          <a href="/" class="toolbar__app" aria-label="App">
+            D
+          </a>
+
+          <hr class="toolbar__divider" />
+
+          <nav class="toolbar__nav" aria-label="Primary">
+            <a class="toolbar__btn toolbar__btn--active" aria-label="Home" title="Home" aria-current="page" href="./dashboard-home.html">
+              <svg class="toolbar__icon" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M4 10.5 12 4l8 6.5V20a2 2 0 0 1-2 2h-4v-6H10v6H6a2 2 0 0 1-2-2z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+            <a class="toolbar__btn" aria-label="Conversations" title="Conversations" href="./dashboard-inbox.html">
+              <svg class="toolbar__icon" viewBox="0 0 24 24" aria-hidden="true">
+                <rect x="3" y="4" width="18" height="12" rx="2" ry="2" fill="none" stroke="currentColor" stroke-width="1.8"/>
+                <path d="M3 8l9 5 9-5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+            <a class="toolbar__btn" aria-label="Modules" title="Modules" href="./dashboard-modules.html">
+              <svg class="toolbar__icon" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M4 4h7v7H4zM13 4h7v7h-7zM4 13h7v7H4zM13 13h7v7h-7z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/>
+              </svg>
+            </a>
+
+            <a class="toolbar__btn" aria-label="CRM" title="CRM" href="./dashboard-crm.html">
+              <svg class="toolbar__icon" viewBox="0 0 24 24" aria-hidden="true">
+                <circle cx="12" cy="7.5" r="3" fill="none" stroke="currentColor" stroke-width="1.8"/>
+                <path d="M4 20a8 5 0 0 1 16 0" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+
+            <a class="toolbar__btn" aria-label="Vendors" title="Vendors" href="./dashboard-vendors.html">
+              <svg class="toolbar__icon" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M3 10h18l-2-5H5l-2 5Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
+                <path d="M5 10v8h14v-8" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
+              </svg>
+            </a>
+
+            <a class="toolbar__btn" aria-label="Visa & Docs" title="Visa & Docs" href="./dashboard-visa-docs.html">
+              <svg class="toolbar__icon" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M7 3h8l4 4v14H7V3Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
+                <path d="M15 3v4h4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
+                <path d="M9 14l2 2 4-4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+          </nav>
+
+          <div class="toolbar__spacer" aria-hidden="true"></div>
+
+          <a class="toolbar__btn" aria-label="Settings" title="Settings" href="./dashboard-settings.html">
+            <svg class="toolbar__icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M9.594 3.94c.09-.542.56-.94 1.11-.94h2.593c.55 0 1.02.398 1.11.94l.213 1.281c.063.374.313.686.645.87.074.04.147.083.22.127.325.196.72.257 1.075.124l1.217-.456a1.125 1.125 0 0 1 1.37.49l1.296 2.247a1.125 1.125 0 0 1-.26 1.431l-1.003.827c-.293.241-.438.613-.43.992a7.723 7.723 0 0 1 0 .255c-.008.378.137.75.43.991l1.004.827c.424.35.534.955.26 1.43l-1.298 2.247a1.125 1.125 0 0 1-1.369.491l-1.217-.456c-.355-.133-.75-.072-1.076.124a6.47 6.47 0 0 1-.22.128c-.331.183-.581.495-.644.869l-.213 1.281c-.09.543-.56.94-1.11.94h-2.594c-.55 0-1.019-.398-1.11-.94l-.213-1.281c-.062-.374-.312-.686-.644-.87a6.52 6.52 0 0 1-.22-.127c-.325-.196-.72-.257-1.076-.124l-1.217.456a1.125 1.125 0 0 1-1.369-.49l-1.297-2.247a1.125 1.125 0 0 1 .26-1.431l1.004-.827c.292-.24.437-.613.43-.991a6.932 6.932 0 0 1 0-.255c.007-.38-.138-.751-.43-.992l-1.004-.827a1.125 1.125 0 0 1-.26-1.43l1.297-2.247a1.125 1.125 0 0 1 1.37-.491l1.216.456c.356.133.751.072 1.076-.124.072-.044.146-.086.22-.128.332-.183.582-.495.644-.869l.214-1.28Z" />
+              <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+            </svg>
+          </a>
+        </div>
+      </aside>
+
+      <section class="main">
+        <header class="app-header">
+          <h1 class="page-title">Home</h1>
+          <div class="header-right">
+            <details class="user-menu">
+              <summary class="user-menu__summary" aria-label="Open user menu">
+                <div class="user-menu__avatar" aria-hidden="true">JD</div>
+                <div class="user-menu__meta">
+                  <div class="user-menu__name">John Doe</div>
+                  <div class="user-menu__role">Sales Agent</div>
+                </div>
+                <svg class="user-menu__chevron" viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </summary>
+              <ul class="user-menu__list" role="menu">
+                <li class="user-menu__item"><a class="user-menu__link" href="#" role="menuitem" data-modal-target="#modal-profile">Profile</a></li>
+                <li class="user-menu__item"><a class="user-menu__link" href="#" role="menuitem">Preferences</a></li>
+                <li class="user-menu__item"><hr /></li>
+                <li class="user-menu__item"><a class="user-menu__link" href="./login.html" role="menuitem">Sign out</a></li>
+              </ul>
+            </details>
+          </div>
+        </header>
+
+        <div class="content">
+          <div class="home">
+            <section aria-label="KPIs" class="stat-grid">
+              <article class="panel stat-card">
+                <div class="kpi-label">Active Leads</div>
+                <div class="kpi">128</div>
+                <div class="kpi-delta">+6 this week</div>
+              </article>
+              <article class="panel stat-card">
+                <div class="kpi-label">Sales (Month)</div>
+                <div class="kpi">$182,400</div>
+                <div class="kpi-delta">+8.4% MoM</div>
+              </article>
+              <article class="panel stat-card">
+                <div class="kpi-label">Quotes Sent (30d)</div>
+                <div class="kpi">312</div>
+                <div class="kpi-delta">+12%</div>
+              </article>
+              <article class="panel stat-card">
+                <div class="kpi-label">Conversion Rate</div>
+                <div class="kpi">26.7%</div>
+                <div class="kpi-delta">-1.3 pp</div>
+              </article>
+            </section>
+
+            <section class="panel-grid">
+              <article class="panel">
+                <header class="panel-header">
+                  <h3 class="panel-title">Sales trend (12 months)</h3>
+                </header>
+                <div class="panel-body">
+                  <div class="chart" role="img" aria-label="Sales trend chart placeholder"></div>
+                </div>
+              </article>
+
+              <article class="panel">
+                <header class="panel-header">
+                  <h3 class="panel-title">Pipeline by stage</h3>
+                </header>
+                <div class="panel-body">
+                  <div class="progress">
+                    <div class="progress-row">
+                      <span class="progress-label">New</span>
+                      <div class="progress-track" role="progressbar" aria-label="New" aria-valuemin="0" aria-valuemax="100" aria-valuenow="28">
+                        <span class="progress-bar" style="--w:28%"></span>
+                      </div>
+                      <span class="progress-value">54</span>
+                    </div>
+                    <div class="progress-row">
+                      <span class="progress-label">Qualified</span>
+                      <div class="progress-track" role="progressbar" aria-label="Qualified" aria-valuemin="0" aria-valuemax="100" aria-valuenow="40">
+                        <span class="progress-bar" style="--w:40%"></span>
+                      </div>
+                      <span class="progress-value">78</span>
+                    </div>
+                    <div class="progress-row">
+                      <span class="progress-label">Proposal</span>
+                      <div class="progress-track" role="progressbar" aria-label="Proposal" aria-valuemin="0" aria-valuemax="100" aria-valuenow="32">
+                        <span class="progress-bar" style="--w:32%"></span>
+                      </div>
+                      <span class="progress-value">62</span>
+                    </div>
+                    <div class="progress-row">
+                      <span class="progress-label">Won</span>
+                      <div class="progress-track" role="progressbar" aria-label="Won" aria-valuemin="0" aria-valuemax="100" aria-valuenow="18">
+                        <span class="progress-bar" style="--w:18%"></span>
+                      </div>
+                      <span class="progress-value">28</span>
+                    </div>
+                  </div>
+                </div>
+              </article>
+            </section>
+
+            <section class="panel-grid thirds">
+              <article class="panel">
+                <header class="panel-header">
+                  <h3 class="panel-title">Tasks & reminders</h3>
+                </header>
+                <ul class="list">
+                  <li>Follow up with ACME (quote #Q-1042)</li>
+                  <li>Prepare group itinerary for 12 pax (Bali)</li>
+                  <li>Finalize hotel contracts (Q4)</li>
+                </ul>
+              </article>
+
+              <article class="panel">
+                <header class="panel-header">
+                  <h3 class="panel-title">Recent activity</h3>
+                </header>
+                <ul class="list">
+                  <li>Quote sent to Oceanic Travels — $12,800</li>
+                  <li>Lead converted: Smith Family — Portugal</li>
+                  <li>New lead: Wander Co — Thailand</li>
+                </ul>
+              </article>
+
+              <article class="panel">
+                <header class="panel-header">
+                  <h3 class="panel-title">Top destinations</h3>
+                </header>
+                <ul class="list">
+                  <li>Bali — 46 bookings</li>
+                  <li>Lisbon — 31 bookings</li>
+                  <li>Kyoto — 24 bookings</li>
+                </ul>
+              </article>
+            </section>
+          </div>
+        </div>
+        <footer class="app-footer" aria-label="Status bar">
+          DMC360 v1.0.0-alpha.2
+        </footer>
+      </section>
+    </div>
+
+    <!-- Profile modal -->
+    <div class="modal" id="modal-profile" aria-hidden="true">
+      <div class="modal__backdrop" data-modal-close></div>
+      <div class="modal__dialog" role="dialog" aria-modal="true" aria-labelledby="modal-profile-title">
+        <header class="modal__header">
+          <h2 class="modal__title" id="modal-profile-title">Profile</h2>
+          <button type="button" class="modal__close" aria-label="Close" data-modal-close>
+            <svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M6 6l12 12M18 6L6 18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </button>
+        </header>
+        <div class="modal__body">
+          <div class="stack">
+            <div class="field">
+              <label for="pf-name">Full name</label>
+              <input id="pf-name" type="text" class="text-input" placeholder="John Doe" />
+            </div>
+            <div class="field">
+              <label for="pf-email">Email</label>
+              <input id="pf-email" type="email" class="text-input" placeholder="john@example.com" />
+            </div>
+          </div>
+        </div>
+        <footer class="modal__footer">
+          <button type="button" class="btn" data-modal-close>Close</button>
+          <button type="button" class="btn">Save</button>
+        </footer>
+      </div>
+    </div>
+
+    <!-- Modal script (scoped to Home) -->
+    <script>
+      (function () {
+        const $ = (s, r = document) => r.querySelector(s);
+        const $$ = (s, r = document) => Array.from(r.querySelectorAll(s));
+
+        const modal = $('#modal-profile');
+        if (!modal) return;
+
+        let lastActive = null;
+        const focusables = () =>
+          $$('a[href],button,textarea,input,select,details summary,[tabindex]:not([tabindex="-1"])', modal)
+            .filter(el => !el.hasAttribute('disabled') && el.offsetParent !== null);
+
+        const open = () => {
+          lastActive = document.activeElement;
+          document.body.classList.add('has-modal');
+          modal.classList.add('is-open');
+          modal.removeAttribute('aria-hidden');
+          const first = focusables()[0] || modal;
+          first.focus();
+          document.addEventListener('keydown', onKeydown);
+          // close the user menu popover
+          const um = document.querySelector('details.user-menu[open]'); if (um) um.removeAttribute('open');
+        };
+
+        const close = () => {
+          modal.classList.remove('is-open');
+          modal.setAttribute('aria-hidden','true');
+          document.body.classList.remove('has-modal');
+          document.removeEventListener('keydown', onKeydown);
+          if (lastActive && lastActive.focus) lastActive.focus();
+        };
+
+        const onKeydown = (e) => {
+          if (e.key === 'Escape') { e.preventDefault(); close(); return; }
+          if (e.key === 'Tab') {
+            const f = focusables();
+            if (!f.length) return;
+            const i = f.indexOf(document.activeElement);
+            if (e.shiftKey && (i <= 0)) { e.preventDefault(); f[f.length - 1].focus(); }
+            else if (!e.shiftKey && (i === f.length - 1)) { e.preventDefault(); f[0].focus(); }
+          }
+        };
+
+        document.addEventListener('click', (e) => {
+          const trigger = e.target.closest('.user-menu__link[data-modal-target="#modal-profile"]');
+          if (trigger) { e.preventDefault(); open(); return; }
+          const closer = e.target.closest('[data-modal-close]');
+          if (closer) { e.preventDefault(); close(); }
+        });
+      })();
+    </script>
+  </body>
+</html>

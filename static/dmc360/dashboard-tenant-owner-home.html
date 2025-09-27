@@ -1,0 +1,298 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>DMC 360 — Platform setup</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div class="layout">
+      <aside class="sidebar">
+        <div class="toolbar">
+          <a href="/" class="toolbar__app" aria-label="App">D</a>
+
+          <hr class="toolbar__divider" />
+
+          <nav class="toolbar__nav" aria-label="Primary">
+            <a class="toolbar__btn toolbar__btn--active" aria-label="Home" title="Home" aria-current="page" href="./dashboard-home.html">
+              <svg class="toolbar__icon" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M4 10.5 12 4l8 6.5V20a2 2 0 0 1-2 2h-4v-6H10v6H6a2 2 0 0 1-2-2z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+            <a class="toolbar__btn" aria-label="Conversations" title="Conversations" href="./dashboard-inbox.html">
+              <svg class="toolbar__icon" viewBox="0 0 24 24" aria-hidden="true">
+                <rect x="3" y="4" width="18" height="12" rx="2" ry="2" fill="none" stroke="currentColor" stroke-width="1.8"/>
+                <path d="M3 8l9 5 9-5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+            <a class="toolbar__btn" aria-label="Modules" title="Modules" href="./dashboard-modules.html">
+              <svg class="toolbar__icon" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M4 4h7v7H4zM13 4h7v7h-7zM4 13h7v7H4zM13 13h7v7h-7z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/>
+              </svg>
+            </a>
+            <a class="toolbar__btn" aria-label="CRM" title="CRM" href="./dashboard-crm.html">
+              <svg class="toolbar__icon" viewBox="0 0 24 24" aria-hidden="true">
+                <circle cx="12" cy="7.5" r="3" fill="none" stroke="currentColor" stroke-width="1.8"/>
+                <path d="M4 20a8 5 0 0 1 16 0" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+            <a class="toolbar__btn" aria-label="Vendors" title="Vendors" href="./dashboard-vendors.html">
+              <svg class="toolbar__icon" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M3 10h18l-2-5H5l-2 5Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
+                <path d="M5 10v8h14v-8" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
+              </svg>
+            </a>
+            <a class="toolbar__btn" aria-label="Visa & Docs" title="Visa & Docs" href="./dashboard-visa-docs.html">
+              <svg class="toolbar__icon" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M7 3h8l4 4v14H7V3Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
+                <path d="M15 3v4h4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
+                <path d="M9 14l2 2 4-4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+          </nav>
+
+          <div class="toolbar__spacer" aria-hidden="true"></div>
+
+          <a class="toolbar__btn" aria-label="Settings" title="Settings" href="./dashboard-settings.html">
+            <svg class="toolbar__icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M9.594 3.94c.09-.542.56-.94 1.11-.94h2.593c.55 0 1.02.398 1.11.94l.213 1.281c.063.374.313.686.645.87.074.04.147.083.22.127.325.196.72.257 1.075.124l1.217-.456a1.125 1.125 0 0 1 1.37.49l1.296 2.247a1.125 1.125 0 0 1-.26 1.431l-1.003.827c-.293.241-.438.613-.43.992a7.723 7.723 0 0 1 0 .255c-.008.378.137.75.43.991l1.004.827c.424.35.534.955.26 1.43l-1.298 2.247a1.125 1.125 0 0 1-1.369.491l-1.217-.456c-.355-.133-.75-.072-1.076.124a6.47 6.47 0 0 1-.22.128c-.331.183-.581.495-.644.869l-.213 1.281c-.09.543-.56.94-1.11.94h-2.594c-.55 0-1.019-.398-1.11-.94l-.213-1.281c-.062-.374-.312-.686-.644-.87a6.52 6.52 0 0 1-.22-.127c-.325-.196-.72-.257-1.076-.124l-1.217.456a1.125 1.125 0 0 1-1.369-.49l-1.297-2.247a1.125 1.125 0 0 1 .26-1.431l1.004-.827c.292-.24.437-.613.43-.991a6.932 6.932 0 0 1 0-.255c.007-.38-.138-.751-.43-.992l-1.004-.827a1.125 1.125 0 0 1-.26-1.43l1.297-2.247a1.125 1.125 0 0 1 1.37-.491l1.216.456c.356.133.751.072 1.076-.124.072-.044.146-.086.22-.128.332-.183.582-.495.644-.869l.214-1.28Z" />
+              <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+            </svg>
+          </a>
+        </div>
+      </aside>
+
+      <section class="main">
+        <header class="app-header">
+          <h1 class="page-title">Tenant setup</h1>
+          <div class="header-right">
+            <details class="user-menu">
+              <summary class="user-menu__summary" aria-label="Open user menu">
+                <div class="user-menu__avatar" aria-hidden="true">JD</div>
+                <div class="user-menu__meta">
+                  <div class="user-menu__name">John Doe</div>
+                  <div class="user-menu__role">Tenant Owner</div>
+                </div>
+                <svg class="user-menu__chevron" viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </summary>
+              <ul class="user-menu__list" role="menu">
+                <li class="user-menu__item"><a class="user-menu__link" href="#" role="menuitem">Profile</a></li>
+                <li class="user-menu__item"><a class="user-menu__link" href="#" role="menuitem">Preferences</a></li>
+                <li class="user-menu__item"><hr /></li>
+                <li class="user-menu__item"><a class="user-menu__link" href="./login.html" role="menuitem">Sign out</a></li>
+              </ul>
+            </details>
+          </div>
+        </header>
+
+        <div class="content">
+          <div class="home">
+            <section class="panel-grid">
+              <!-- Tenant profile -->
+              <article class="panel">
+                <header class="panel-header">
+                  <h3 class="panel-title">Tenant profile</h3>
+                </header>
+                <div class="panel-body">
+                  <div class="mini-form">
+                    <div class="mini-grid">
+                      <input class="text-input" type="text" placeholder="Tenant name (public)" value="Example Travel Co" />
+                      <input class="text-input" type="text" placeholder="Tenant ID / slug (unique)" value="example-travel" />
+                      <input class="text-input" type="text" placeholder="Legal entity name" />
+                      <input class="text-input" type="text" placeholder="Tax/VAT ID" />
+                    </div>
+
+                    <div class="mini-grid">
+                      <input class="text-input" type="email" placeholder="Contact email" />
+                      <input class="text-input" type="email" placeholder="Support email" />
+                      <select class="text-input" aria-label="Country">
+                        <option selected>United States</option>
+                        <option>United Kingdom</option>
+                        <option>Portugal</option>
+                        <option>Singapore</option>
+                      </select>
+                      <select class="text-input" aria-label="Timezone">
+                        <option>UTC</option>
+                        <option selected>GMT+01:00</option>
+                        <option>GMT+08:00</option>
+                      </select>
+                    </div>
+
+                    <textarea class="text-input" rows="3" placeholder="Billing address"></textarea>
+                    <label class="checkbox">
+                      <input type="checkbox" />
+                      <span>Enable logo on documents</span>
+                    </label>
+                    <input class="file-input" type="file" accept="image/*" aria-label="Upload logo" />
+
+                    <div class="actions-row">
+                      <button class="btn" type="button">Save tenant</button>
+                    </div>
+                  </div>
+                </div>
+              </article>
+
+              <!-- Tenant owner -->
+              <article class="panel">
+                <header class="panel-header">
+                  <h3 class="panel-title">Tenant owner</h3>
+                </header>
+                <div class="panel-body">
+                  <div class="mini-form">
+                    <div class="mini-grid">
+                      <input class="text-input" type="text" placeholder="Full name" value="Jane Admin" />
+                      <input class="text-input" type="email" placeholder="Email" value="owner@example.com" />
+                      <input class="text-input" type="text" placeholder="Role" value="Owner" />
+                      <input class="text-input" type="tel" placeholder="Phone (optional)" />
+                    </div>
+
+                    <div class="actions-row" style="justify-content: space-between;">
+                      <button class="btn" type="button">Save owner</button>
+                      <div>
+                        <button class="pill" type="button">Send password reset</button>
+                        <button class="pill" type="button">Set temporary password</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </article>
+            </section>
+
+            <!-- Users management -->
+            <section class="panel" style="margin-top: 8px;">
+              <header class="panel-header">
+                <h3 class="panel-title">Users</h3>
+              </header>
+              <div class="panel-body">
+                <div class="mini-form">
+                  <div class="modules-toolbar">
+                    <div class="input-wrap">
+                      <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+                        <circle cx="11" cy="11" r="7" fill="none" stroke="currentColor" stroke-width="1.6"/>
+                        <path d="M20 20l-3.5-3.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+                      </svg>
+                      <input class="text-input" type="search" placeholder="Search users" />
+                    </div>
+                    <div class="thread-filters">
+                      <button class="pill" aria-pressed="true">All</button>
+                      <button class="pill">Active</button>
+                      <button class="pill">Invited</button>
+                      <button class="pill">Deactivated</button>
+                    </div>
+                  </div>
+
+                  <div class="table-wrap">
+                    <table class="table" aria-label="Users">
+                      <thead>
+                        <tr>
+                          <th>Name</th>
+                          <th>Email</th>
+                          <th>Role</th>
+                          <th>Status</th>
+                          <th style="text-align:right;">Actions</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>Jane Admin</td>
+                          <td>owner@example.com</td>
+                          <td><span class="pill small">Owner</span></td>
+                          <td><span class="pill small success">Active</span></td>
+                          <td class="actions-cell">
+                            <button class="pill" type="button">Reset password</button>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>Mark Agent</td>
+                          <td>mark@company.com</td>
+                          <td><span class="pill small">Agent</span></td>
+                          <td><span class="pill small success">Active</span></td>
+                          <td class="actions-cell">
+                            <button class="pill" type="button">Reset password</button>
+                            <button class="pill" type="button">Deactivate</button>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>Lucy Ops</td>
+                          <td>lucy@company.com</td>
+                          <td><span class="pill small">Operations</span></td>
+                          <td><span class="pill small">Invited</span></td>
+                          <td class="actions-cell">
+                            <button class="pill" type="button">Resend invite</button>
+                            <button class="pill" type="button">Cancel invite</button>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+
+                  <div class="divider" style="margin: 12px 0;"></div>
+
+                  <div class="mini-form">
+                    <div class="section-title">Invite user</div>
+                    <div class="mini-grid">
+                      <input class="text-input" type="text" placeholder="Full name" />
+                      <input class="text-input" type="email" placeholder="Email" />
+                      <select class="text-input" aria-label="Role">
+                        <option>Agent</option>
+                        <option>Operations</option>
+                        <option>Admin</option>
+                        <option>Owner</option>
+                      </select>
+                      <select class="text-input" aria-label="Team (optional)">
+                        <option selected>— Team (optional) —</option>
+                        <option>Sales</option>
+                        <option>Operations</option>
+                        <option>Finance</option>
+                      </select>
+                    </div>
+                    <div class="actions-row" style="justify-content: flex-end;">
+                      <button class="btn" type="button">Send invite</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <!-- Security -->
+            <section class="panel">
+              <header class="panel-header">
+                <h3 class="panel-title">Security</h3>
+              </header>
+              <div class="panel-body">
+                <div class="mini-form">
+                  <div class="mini-grid">
+                    <input class="text-input" type="number" min="6" max="128" placeholder="Min password length" value="10" />
+                    <select class="text-input" aria-label="Session timeout">
+                      <option>15 minutes</option>
+                      <option selected>30 minutes</option>
+                      <option>1 hour</option>
+                      <option>8 hours</option>
+                    </select>
+                  </div>
+                  <label class="checkbox">
+                    <input type="checkbox" checked />
+                    <span>Require 2FA for all users</span>
+                  </label>
+                  <label class="checkbox">
+                    <input type="checkbox" checked />
+                    <span>Require symbols and numbers</span>
+                  </label>
+                  <div class="actions-row" style="justify-content: flex-end;">
+                    <button class="btn" type="button">Save security</button>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+        <footer class="app-footer" aria-label="Status bar">
+          DMC360 v1.0.0-alpha.2
+        </footer>
+      </section>
+    </div>
+  </body>
+</html>

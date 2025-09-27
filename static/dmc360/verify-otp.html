@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Two-step verification</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <main class="center">
+      <section class="card">
+        <header class="stack center-text">
+          <h1 class="title">Two-step verification</h1>
+          <p class="subtitle">Enter the 6-digit code from your authenticator or email.</p>
+        </header>
+
+        <form class="stack form" action="./dashboard-home.html" method="post" novalidate>
+          <div class="otp-inputs" aria-label="One-time passcode" role="group">
+            <input inputmode="numeric" pattern="[0-9]*" maxlength="1" autocomplete="one-time-code" aria-label="Digit 1" />
+            <input inputmode="numeric" pattern="[0-9]*" maxlength="1" autocomplete="one-time-code" aria-label="Digit 2" />
+            <input inputmode="numeric" pattern="[0-9]*" maxlength="1" autocomplete="one-time-code" aria-label="Digit 3" />
+            <input inputmode="numeric" pattern="[0-9]*" maxlength="1" autocomplete="one-time-code" aria-label="Digit 4" />
+            <input inputmode="numeric" pattern="[0-9]*" maxlength="1" autocomplete="one-time-code" aria-label="Digit 5" />
+            <input inputmode="numeric" pattern="[0-9]*" maxlength="1" autocomplete="one-time-code" aria-label="Digit 6" />
+          </div>
+
+          <input type="hidden" name="otp" id="otp-value" />
+
+          <div class="form-aux">
+            <span class="otp-hint">Haven’t received it?</span>
+            <a class="muted-link" id="resend-code" href="#">Resend code</a>
+          </div>
+
+          <button class="btn" type="submit">Verify</button>
+
+          <p class="subtitle" style="margin:8px 0 0; text-align:center;">
+            <a href="./login.html">Back to sign in</a>
+          </p>
+        </form>
+      </section>
+    </main>
+
+    <script>
+      (function () {
+        const inputs = Array.from(document.querySelectorAll('.otp-inputs input'));
+        const hidden = document.getElementById('otp-value');
+        // Add: move inline onclick to JS
+        const resendLink = document.getElementById('resend-code');
+        resendLink?.addEventListener('click', (e) => {
+          e.preventDefault();
+          // TODO: trigger resend action (API call, cooldown UI, etc.)
+        });
+
+        function updateHidden() {
+          hidden.value = inputs.map(i => i.value.trim()).join('');
+        }
+
+        inputs.forEach((inp, idx) => {
+          inp.addEventListener('input', () => {
+            inp.value = inp.value.replace(/\D/g, '').slice(0, 1);
+            if (inp.value && idx < inputs.length - 1) inputs[idx + 1].focus();
+            updateHidden();
+          });
+          inp.addEventListener('keydown', (e) => {
+            if (e.key === 'Backspace' && !inp.value && idx > 0) {
+              inputs[idx - 1].focus();
+            }
+          });
+          inp.addEventListener('paste', (e) => {
+            const text = (e.clipboardData || window.clipboardData).getData('text').replace(/\D/g, '').slice(0, inputs.length);
+            if (!text) return;
+            e.preventDefault();
+            inputs.forEach((i, j) => i.value = text[j] || '');
+            (inputs[Math.min(text.length, inputs.length) - 1] || inputs[0]).focus();
+            updateHidden();
+          });
+        });
+      })();
+    </script>
+  </body>
+</html>

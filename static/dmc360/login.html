@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Sign in</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <main class="center">
+      <section class="card">
+        <div class="auth__brand">
+          <a href="/" class="auth__logo app-icon app-icon--lg" aria-label="DMC360">D</a>
+        </div>
+
+        <header class="stack center-text">
+          <h1 class="title">Sign in</h1>
+          <p class="subtitle">Please sign in to continue.</p>
+        </header>
+
+        <form class="stack form" action="./verify-otp.html" method="post" novalidate>
+          <div class="field">
+            <label for="email">Email</label>
+            <input
+              id="email"
+              name="email"
+              type="email"
+              inputmode="email"
+              autocomplete="username"
+              placeholder="you@example.com"
+              required
+            />
+          </div>
+
+          <div class="field">
+            <label for="password">Password</label>
+            <input
+              id="password"
+              name="password"
+              type="password"
+              autocomplete="current-password"
+              placeholder="••••••••"
+              required
+              minlength="6"
+            />
+          </div>
+
+          <div class="form-aux">
+            <label class="checkbox">
+              <input id="remember" name="remember" type="checkbox" />
+              <span>Remember me</span>
+            </label>
+            <a class="muted-link" href="./forgot-password.html">Forgot password?</a>
+          </div>
+
+          <button class="btn" type="submit">Sign in</button>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>
